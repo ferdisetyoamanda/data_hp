@@ -12,6 +12,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        body {
+            background-image: url("https://3.bp.blogspot.com/-4eYUs93pqAQ/VrCFHuOsVJI/AAAAAAAAFNY/bquMBbnAB4s/s1600/merk%2Bhp.PNG");
+        }
+        .bg-konten {
+            opacity: 97%;
+        }
+    </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +27,7 @@
     <title>Edit Data</title>
 </head>
 <body>
-<div class="container">
+<div class="container bg-konten">
     <div class="card shadow mt-3" >
     <form method="post" action="editproses.php" >
         <div class="card-body" style="margin: auto;">
@@ -29,21 +37,21 @@
                 <input type="hidden" class="form-control" id ="id" name ="id" value ="<?php echo $id; ?>" required>
             </div>
             <div class="form-group">
-                <label class="mt-2mb-2" for="nim">nama merek</label>
+                <label class="mt-2mb-2" for="nim">Nama Merek</label>
                 <input type="text" class="form-control" name="merek_hp" id="nim" value="<?php echo $merek_hp;?>"  required>
             </div>
             <div class="form-group">
-                <label class="mt-5-mb-5" for="nama">tahun</label>
+                <label class="mt-5-mb-5" for="nama">Tahun</label>
                 <input type="text" class="form-control" name="tahun" id="nama" placeholder="masukan nama"value ="<?php echo $tahun; ?>" required>
             </div>
             <div class="form-group">
-                <label for="prodi">tipe</label>
+                <label for="prodi">Tipe</label>
                 <select class="form-control" name="tipe" id="prodi">
                     <option value="<?php echo $tipe; ?>"><?php echo $tipe; ?></option>
-                    <option value="entry">entry level</option>
-                    <option value="mid">mid level</option>
-                    <option value="flagship">flaghsip</option>
-                    <option value="Komputer">Komputer</option>
+                    <option value="entry">Entry Level</option>
+                    <option value="mid">Mid Level</option>
+                    <option value="flagship">Flaghsip</option>
+                    
                 </select>
             </div>
             <div class="form-group">

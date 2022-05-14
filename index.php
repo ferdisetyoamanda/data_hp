@@ -7,13 +7,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        body {
+            background-image: url("https://3.bp.blogspot.com/-4eYUs93pqAQ/VrCFHuOsVJI/AAAAAAAAFNY/bquMBbnAB4s/s1600/merk%2Bhp.PNG");
+        }
+        .bg-konten {
+            opacity: 97%;
+        }
+    </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Home</title>
 </head>
 <body>
-    <div class="container">
+
+    <div class="container bg-konten" >
         <div class="card mt-5">
-            <div class="card-body shadow" style="margin-auto;">
+            <div class="card-body shadow"  style="margin-auto;">
                 <a href="tambahdata.php" class="btn btn-primary" >Tambah</a>
                 <h3 class="text-center"><b>Daftar Data</b></h3>
                 <table class="table table-success table-striped">
@@ -23,7 +32,7 @@
                             <td>Nama merk</td>
                             <td>tipe merk</td>
                             <td>tahun produksi</td>
-                            <td>Aksi</td>
+                            <td>Pilih</td>
                         </tr>
                     </thead>
                     <tbody>
